@@ -1,7 +1,7 @@
 {
   "name": "devspace",
   "engines": {
-    "node": "16.x"
+    "node": "18.x"
   },
   "version": "0.1.0",
   "description": "A blog using Tailwind CSS and Markdown.",
