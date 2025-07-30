@@ -8,8 +8,6 @@ author: "Jane Doe"
 author_image: "https://randomuser.me/api/portraits/women/11.jpg"
 ---
 
-<!-- Markdow generator - https://jaspervdj.be/lorem-markdownum/ -->
-
 Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat
 haec praepes [partes epulae](http://cui.com/), in egisse de. Caecisque ter
 manus. Munere in exhalat, ferre sed [habe quaeque saepe](http://ne.org/fretum)
