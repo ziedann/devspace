@@ -1,5 +1,8 @@
 {
   "name": "devspace",
+  "engines": {
+    "node": "16.x"
+  },
   "version": "0.1.0",
   "description": "A blog using Tailwind CSS and Markdown.",
   "repository": {
