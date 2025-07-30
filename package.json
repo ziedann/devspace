@@ -17,12 +17,12 @@
   "homepage": "https://github.com/solygambas/next-projects#readme",
   "scripts": {
     "dev": "next dev",
-    "build": "export NODE_OPTIONS=--openssl-legacy-provider && next build",
+    "build": "next build",
     "export": "next export",
     "start": "next start",
     "lint": "next lint",
     "cache-posts": "node scripts/cache.js",
-    "prepare": "cd .. && husky install 06-devspace/.husky"
+    "prepare": "husky install"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
