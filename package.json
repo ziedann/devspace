@@ -17,7 +17,7 @@
   "homepage": "https://github.com/solygambas/next-projects#readme",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider && next build",
     "export": "next export",
     "start": "next start",
     "lint": "next lint",
