@@ -11,6 +11,7 @@ export default function NotFoundPage() {
           width={70}
           height={70}
           className="bg-gray-800 rounded-2xl"
+          alt="DevSpace Logo"
         />
         <h1 className="text-6xl my-5">Whoops!</h1>
         <h2 className="text-4xl text-gray-400 mb-5">
