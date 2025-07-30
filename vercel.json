@@ -5,10 +5,11 @@
       "src": "package.json",
       "use": "@vercel/next",
       "config": {
-        "nodeVersion": "18.x"
+        "nodeVersion": "22.x"
       }
     }
   ],
+  "buildCommand": "next build",
   "env": {
     "NODE_OPTIONS": "--openssl-legacy-provider"
   }
