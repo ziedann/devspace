@@ -10,24 +10,30 @@ export default function Pagination({ currentPage, numPages }) {
     <div className="mt-6">
       <ul className="flex justify-center pl-0 list-none my-2">
         {!isFirst && (
-          <Link href={prevPage}>
-            <li className="relative block py-2 px-3 leading-tight bg-white border border-gray-300 text-gray-800 mr-1 hover:bg-gray-200 cursor-pointer">
-              Previous
-            </li>
+          <Link href={prevPage} passHref>
+            <a>
+              <li className="relative block py-2 px-3 leading-tight bg-white border border-gray-300 text-gray-800 mr-1 hover:bg-gray-200 cursor-pointer">
+                Previous
+              </li>
+            </a>
           </Link>
         )}
         {Array.from({ length: numPages }, (_, i) => (
-          <Link href={`/blog/page/${i + 1}`}>
-            <li className="relative block py-2 px-3 leading-tight bg-white border border-gray-300 text-gray-800 mr-1 hover:bg-gray-200 cursor-pointer">
-              {i + 1}
-            </li>
+          <Link key={i} href={`/blog/page/${i + 1}`} passHref>
+            <a>
+              <li className="relative block py-2 px-3 leading-tight bg-white border border-gray-300 text-gray-800 mr-1 hover:bg-gray-200 cursor-pointer">
+                {i + 1}
+              </li>
+            </a>
           </Link>
         ))}
         {!isLast && (
-          <Link href={nextPage}>
-            <li className="relative block py-2 px-3 leading-tight bg-white border border-gray-300 text-gray-800 mr-1 hover:bg-gray-200 cursor-pointer">
-              Next
-            </li>
+          <Link href={nextPage} passHref>
+            <a>
+              <li className="relative block py-2 px-3 leading-tight bg-white border border-gray-300 text-gray-800 mr-1 hover:bg-gray-200 cursor-pointer">
+                Next
+              </li>
+            </a>
           </Link>
         )}
       </ul>
