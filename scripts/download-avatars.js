@@ -46,8 +46,9 @@ posts.forEach((filename) => {
       
       // Update the markdown file to use local path
       const newImagePath = `/images/authors/${localFileName}`;
+      // Handle both single and double quotes in frontmatter
       const updatedContent = fileContents.replace(
-        `author_image: "${imageUrl}"`,
+        /author_image: ['"](.+?)['"]/,
         `author_image: "${newImagePath}"`
       );
       

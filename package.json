@@ -8,8 +8,8 @@
   "author": "zidan",
   "license": "MIT",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "set NODE_OPTIONS=--openssl-legacy-provider && next dev",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && next build",
     "export": "next export",
     "start": "next start",
     "lint": "next lint",
